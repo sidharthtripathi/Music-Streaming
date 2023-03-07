@@ -1,0 +1,25 @@
+.navbar{
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color:#253C66 ;
+  border-radius: 20px;
+  border:4px solid #334F81;
+}
+
+#siteIcon{
+  height: 70%;
+}
+
+.navicons{
+  display: inline-flex;
+  width: 30%;
+  height: 30px;
+  background-color: pink;
+
+}
+
+#searchBar{
+  display: block;
+}

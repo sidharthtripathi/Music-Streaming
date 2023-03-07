@@ -1,0 +1,21 @@
+.grid{
+  display:inline-grid;
+  width: 75vw;
+  height: 85vh;
+  background-color: lightgreen;
+  grid-template-columns: 2fr 1.5fr;
+  grid-template-rows: 2fr 1.5fr;
+}
+
+.banner{
+  background-color: lightblue;
+
+}
+.liveShows{
+background-color: lightgray;
+}
+
+.tickets{
+  grid-column: 1/-1;
+  background-color: lightsalmon;
+}
