@@ -1,25 +1,41 @@
 .mainScreen{
   position: relative;
+  height: 90vh;
 }
 
 .sidebar{
-  justify-content: space-around;
+  display: inline-block;
   position: absolute;
   top: 0px;
-  display: inline-flex;
-  background-color: lightgreen;
-  flex-direction: column;
+  right: 0px;
   height:100%;
-  width:25%;
+  width: 25%;
   
 }
 
 .currentPlaying,.comments{
-  display: inline-block;
   height: 50%;
   width: 100%;
   background-color: lightseagreen;
 }
+.currentPlaying{
+  animation: scaleup;
+  animation-duration: 500ms;
+}
+@keyframes scaleup {
+  from{
+    transform: scale(0.8);
+  }
+  
+}
 .comments{
-  background-color: lightskyblue;
+  animation: slideup;
+  animation-duration: 500ms;
+  background-color: black;
+}
+
+@keyframes slideup{
+  from{
+    transform: translateY(100px);
+  }
 }

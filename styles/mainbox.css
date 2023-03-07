@@ -1,21 +1,64 @@
 .grid{
   display:inline-grid;
   width: 75vw;
-  height: 85vh;
-  background-color: lightgreen;
+  height: 100%;
   grid-template-columns: 2fr 1.5fr;
   grid-template-rows: 2fr 1.5fr;
 }
-
+@keyframes slide {
+  from{
+     transform: translateY(-100px)
+  }
+}
 .banner{
-  background-color: lightblue;
-
+  animation: slide;
+  animation-duration: 500ms;
+  background-color: red;
+  
 }
 .liveShows{
-background-color: lightgray;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .tickets{
+  display: flex;
+  justify-content: space-between;
   grid-column: 1/-1;
-  background-color: lightsalmon;
+}
+
+.individualShow{
+  animation: slideX;
+  height: 32%;
+  background-color: purple;
+}
+.i1{
+animation-duration: 600ms;
+}
+.i2{
+  animation-duration: 400ms;
+}
+
+.i3{
+  animation-duration: 200ms;
+}
+@keyframes slideX {
+  from{
+    transform:translateX(-30px);
+  }
+}
+
+.artist{
+width: 24%;
+height: 100%;
+background-color: yellow;
+animation: scaleup;
+animation-duration: 500ms;
+}
+
+@keyframes scaleup {
+  from{
+    transform: scale(0.8);
+  }
 }
